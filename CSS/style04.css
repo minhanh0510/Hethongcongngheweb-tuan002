@@ -1,0 +1,126 @@
+.khung {
+    width: 90%;
+    border: 2px solid gray;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    text-align: right;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    
+}
+
+.section {
+    padding: 20px;
+    text-align: left;
+    
+
+}
+
+.section1 {
+    flex: 0.75; 
+    background-image: url(../IMAGE/back.jpg);
+    background-size: 100% 100%;
+}
+.section2 {
+    flex: 3; 
+}
+
+.a1{
+    display: block; 
+    text-decoration: none;
+    color:rgb(118, 68, 167);
+    font-size: 20px;
+    line-height: 50px;
+
+}
+.section1 ul {
+    list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ padding mặc định của ul */
+    margin: 0; /* Loại bỏ margin mặc định của ul */
+}
+
+.section1 li {
+    border-bottom: 1px dashed orange; /* Đường kẻ dưới mỗi mục */
+}
+.khung-van-ban-nho {
+    width: 300px;
+    height: auto;
+    float: right; /* Đưa khung văn bản lên trên và sang bên phải */
+    padding: 5px 10px;
+    margin-left: 10px; /* Khoảng cách giữa khung và đoạn văn */
+    margin-top: -60px;
+    border-top: 5px solid brown;
+    border-left: 5px solid brown;
+    border-bottom: 5px solid rgb(230, 75, 75);
+    border-right: 5px solid rgb(230, 75, 75);
+    background-color: #f9d5ae;
+}
+
+.clearfix::after {
+    content: ""; /* Tạo phần tử ảo */
+    display: table; /* Làm cho phần tử ảo này thành một block table */
+    clear: both; /* Xóa ảnh hưởng của float */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: left; /* Tùy chọn: Căn giữa ảnh theo chiều ngang */
+    align-items: left; /* Tùy chọn: Căn giữa ảnh theo chiều dọc */
+}
+
+.image{
+    display: block;
+    width: 80%;
+    height: 60%;
+}
+
+
+.text-overlay {
+    position: absolute;
+    color: brown;
+    background-color: rgb(231, 236, 142);
+    padding: 10px;
+}
+
+.top-left {
+    
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    width: 180px;
+    border-top:4px solid gray ;
+    border-left:4px solid gray ;
+    border-bottom:4px solid rgb(171, 169, 169) ;
+    border-right:4px solid rgb(171, 169, 169) ;
+    top: -50px;
+    right: 200px;
+}
+
+
+.bottom-right {
+    width: 180px;
+    border-top:4px solid gray ;
+    border-left:4px solid gray ;
+    border-bottom:4px solid rgb(171, 169, 169) ;
+    border-right:4px solid rgb(171, 169, 169) ;
+    bottom: 140px;
+    right: 200px;
+}
+.middle-left {
+    width: 180px;
+    border-top:4px solid gray ;
+    border-left:4px solid gray ;
+    border-bottom:4px solid rgb(171, 169, 169) ;
+    border-right:4px solid rgb(171, 169, 169) ;
+    top: 50%; /* Đặt ở giữa theo chiều dọc */
+    left: -60px; /* Căn lề trái */
+    transform: translateY(-50%); /* Điều chỉnh để canh giữa hoàn hảo theo chiều dọc */
+}
